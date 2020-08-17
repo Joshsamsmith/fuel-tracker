@@ -1,0 +1,6 @@
+
+
+mysql_host: '127.0.0.1'
+mysql_user: 'joshsamsmith'
+mysql_password: 'Thelorry!'
+mysql_db: 'LibraryDB'

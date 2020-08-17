@@ -1,0 +1,31 @@
+
+
+<!-- Insert page -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+    <body>
+        <h2><center>Fuel Tracker</center></h2>
+        <center>
+        {% for item in data %}
+            <tr>
+                <td>Fuel Spend: RM {{item[0]}}</td>
+                <br></br>
+                <td>Fuel Used: {{item[1]}} litres</td>
+            </tr>
+        {% endfor %}
+        </center>
+        <form class="example" action="/track" style="margin:auto;max-width:600px">
+		    <br></br>
+            <button type="submit"<i>New Entry</i></button>
+        </form>
+        <form action="/logout" style="margin:auto;max-width:600px">
+		    <br></br>
+            <button type="submit"<i>Logout</i></button>
+        </form>
+    </body>
+</html>
